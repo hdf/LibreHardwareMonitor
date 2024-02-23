@@ -198,7 +198,7 @@ public class SensorNotifyIcon : IDisposable
                 count++;
         bool small = count > 2;
 
-        _graphics.Clear(Color.Transparent);
+        _graphics.Clear(Color.Black);
         Rectangle bounds = new Rectangle(Point.Empty, _bitmap.Size);
         TextRenderer.DrawText(_graphics, text, small ? _smallFont : _font, bounds, _color, Color.Transparent, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
 
